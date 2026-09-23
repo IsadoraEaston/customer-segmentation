@@ -1,0 +1,7 @@
+# Données (trop volumineuses — voir le README pour le téléchargement)
+data/
+
+# Environnement Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
