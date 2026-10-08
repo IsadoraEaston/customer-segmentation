@@ -6,6 +6,8 @@ Segmenting the customers of a real online retailer using RFM analysis (Recency, 
 
 **Key finding:** about **20% of customers generate 74% of revenue** — and nearly a quarter of customers are valuable buyers who have stopped coming back.
 
+**🚀 [Live demo](https://isadora-customer-segmentation.streamlit.app)** — explore the segments in 3D and classify a customer yourself.
+
 ---
 
 ## Context
@@ -68,6 +70,10 @@ customer-segmentation/
 │   ├── 01_cleaning.ipynb     # cleaning, with a log of every step
 │   ├── 02_rfm.ipynb          # RFM metrics, log transformation, classic scores
 │   └── 03_clustering.ipynb   # K-means, choice of k, segment profiles
+├── app/
+│   ├── streamlit_app.py      # interactive demo (Streamlit)
+│   ├── rfm_segments.csv      # segment results used by the demo
+│   └── requirements.txt
 ├── requirements.txt
 └── data/                     # not versioned — see below
 ```
@@ -86,13 +92,12 @@ Download the dataset from the [UCI page](https://archive.ics.uci.edu/dataset/502
 
 ## Next steps
 
-- Interactive **Streamlit** demo to explore the segments
 - Check whether *At risk* customers made more partial returns before leaving (a possible sign of dissatisfaction)
 - Compare scikit-learn's K-means with my own implementation from the ML Specialization labs
 
 ## Tech stack
 
-Python · pandas · NumPy · scikit-learn · Matplotlib · Jupyter
+Python · pandas · NumPy · scikit-learn · Matplotlib · Plotly · Streamlit · Jupyter
 
 ---
 

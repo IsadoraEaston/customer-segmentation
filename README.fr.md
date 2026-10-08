@@ -6,6 +6,8 @@ Segmentation des clients d'un vrai détaillant en ligne à l'aide de l'analyse R
 
 **Constat principal :** environ **20 % des clients génèrent 74 % du chiffre d'affaires** — et près d'un quart des clients sont de bons acheteurs qui ont cessé de revenir.
 
+**🚀 [Démo en ligne](https://isadora-customer-segmentation.streamlit.app)** — explorez les segments en 3D et classez un client vous-même (interface en anglais).
+
 ---
 
 ## Contexte
@@ -68,6 +70,10 @@ customer-segmentation/
 │   ├── 01_cleaning.ipynb     # nettoyage, avec un journal de chaque étape
 │   ├── 02_rfm.ipynb          # indicateurs RFM, transformation log, scores classiques
 │   └── 03_clustering.ipynb   # K-means, choix de k, profils des segments
+├── app/
+│   ├── streamlit_app.py      # démo interactive (Streamlit)
+│   ├── rfm_segments.csv      # résultats des segments utilisés par la démo
+│   └── requirements.txt
 ├── requirements.txt
 └── data/                     # non versionné — voir ci-dessous
 ```
@@ -86,13 +92,12 @@ Téléchargez le jeu de données depuis la [page UCI](https://archive.ics.uci.ed
 
 ## Prochaines étapes
 
-- Démo interactive avec **Streamlit** pour explorer les segments
 - Vérifier si les clients à risque ont fait plus de retours partiels avant de partir (un signe possible de déception)
 - Comparer le K-means de scikit-learn avec ma propre implémentation réalisée dans les labos de la spécialisation ML
 
 ## Technologies
 
-Python · pandas · NumPy · scikit-learn · Matplotlib · Jupyter
+Python · pandas · NumPy · scikit-learn · Matplotlib · Plotly · Streamlit · Jupyter
 
 ---
 
